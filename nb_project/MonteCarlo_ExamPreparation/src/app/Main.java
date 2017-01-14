@@ -6,6 +6,7 @@ import montecarlo.IMcSolution;
 import montecarlo.McTimedSolutionDecorator;
 import solutions.McSolution_01;
 import solutions.McSolution_02;
+import solutions.McSolution_03;
 
 public class Main {
 
@@ -20,6 +21,7 @@ public class Main {
 
         solvers_.put(1, new McTimedSolutionDecorator(new McSolution_01()));
         solvers_.put(2, new McTimedSolutionDecorator(new McSolution_02()));
+        solvers_.put(3, new McTimedSolutionDecorator(new McSolution_03()));
     }
 
     public void run() {
