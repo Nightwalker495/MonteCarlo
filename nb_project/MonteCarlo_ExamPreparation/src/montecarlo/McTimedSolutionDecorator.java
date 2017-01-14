@@ -20,7 +20,7 @@ public class McTimedSolutionDecorator implements IMcSolution {
     @Override
     public String getReport() {
         StringBuilder str = new StringBuilder("Monte Carlo simulation took ");
-        str.append(getElapsedTimeMs()).append(" ms");
+        str.append(getElapsedTimeMs()).append(" ms.");
         str.append(String.format("%n--------------------------------------%n"));
         str.append(solver_.getReport());
         
