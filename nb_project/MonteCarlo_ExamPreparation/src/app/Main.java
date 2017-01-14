@@ -15,6 +15,7 @@ import solutions.McSolution_08;
 import solutions.McSolution_09;
 import solutions.McSolution_10;
 import solutions.McSolution_11;
+import solutions.McSolution_12;
 
 public class Main {
 
@@ -38,6 +39,7 @@ public class Main {
         solvers_.put(9, new McTimedSolutionDecorator(new McSolution_09()));
         solvers_.put(10, new McTimedSolutionDecorator(new McSolution_10()));
         solvers_.put(11, new McTimedSolutionDecorator(new McSolution_11()));
+        solvers_.put(12, new McTimedSolutionDecorator(new McSolution_12()));
     }
 
     public void run() {
@@ -48,6 +50,7 @@ public class Main {
         do {
             System.out.print("Enter problem number (negative for exit) >\t");
             int solNum = scan.nextInt();
+            
             if (solNum < 0) {
                 done = true;
             } else if ((solNum < 1) || (solNum > solvers_.size())) {
@@ -55,7 +58,9 @@ public class Main {
             } else {
                 System.out.print("Enter number of replications >\t");
                 int replsNum = scan.nextInt();
+                
                 System.out.println("Executing solution for problem #" + solNum);
+                
                 IMcSolution solver = solvers_.get(solNum);
                 solver.run(replsNum);
                 System.out.println(solver.getReport());
