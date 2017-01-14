@@ -14,6 +14,7 @@ import solutions.McSolution_07;
 import solutions.McSolution_08;
 import solutions.McSolution_09;
 import solutions.McSolution_10;
+import solutions.McSolution_11;
 
 public class Main {
 
@@ -36,6 +37,7 @@ public class Main {
         solvers_.put(8, new McTimedSolutionDecorator(new McSolution_08()));
         solvers_.put(9, new McTimedSolutionDecorator(new McSolution_09()));
         solvers_.put(10, new McTimedSolutionDecorator(new McSolution_10()));
+        solvers_.put(11, new McTimedSolutionDecorator(new McSolution_11()));
     }
 
     public void run() {
