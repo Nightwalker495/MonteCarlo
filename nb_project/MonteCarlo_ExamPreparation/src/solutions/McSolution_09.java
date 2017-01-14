@@ -5,6 +5,8 @@ import montecarlo.IMcSolution;
 
 public class McSolution_09 implements IMcSolution {
 
+    private static final double VOLUME = 800.0; // 2 * 5 * 80
+    
     private double integralRes_;
 
     public McSolution_09() {
@@ -24,8 +26,7 @@ public class McSolution_09 implements IMcSolution {
             }
         }
         
-        // Ratio * volume
-        integralRes_ = ((double) count / (double) replsNum) * 800.0;
+        integralRes_ = ((double) count / (double) replsNum) * VOLUME;
     }
 
     @Override
@@ -33,7 +34,7 @@ public class McSolution_09 implements IMcSolution {
         return String.format("Integral result = %.10f%n", integralRes_);
     }
 
-    private double evalFunc(double x, double y) {
+    private static double evalFunc(double x, double y) {
         return (x * x) * y;
     }
 }

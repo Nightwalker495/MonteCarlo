@@ -53,15 +53,15 @@ public class McSolution_08 implements IMcSolution {
         return String.format("Integral result = %.10f%n", integralRes_);
     }
     
-    private double evalFunc(double x) {
+    private static double evalFunc(double x) {
         return Math.sin(x) * Math.cos(x);
     }
     
-    private boolean isUnderCurve(double y, double funcY) {
+    private static boolean isUnderCurve(double y, double funcY) {
         return y <= funcY;
     }
     
-    private double calcArea(double valid, double total,
+    private static double calcArea(double valid, double total,
             double xFrom, double xTo) {
         return (valid / total) * (xTo - xFrom);
     }
