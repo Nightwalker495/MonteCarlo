@@ -9,7 +9,7 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	Mat image;
-	image = imread("E:\\tmp.jpg", IMREAD_COLOR); // Read the file
+	image = imread("tmp.jpg", IMREAD_COLOR); // Read the file
 
 	if (!image.data) // Check for invalid input
 	{
