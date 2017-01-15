@@ -28,7 +28,7 @@ public class McSolution_15 implements IMcSolution {
 
     @Override
     public String getReport() {
-        return String.format("P(waiting > 3 mins) = %.10f%%%n",
+        return String.format("P(waiting > 3 min) = %.10f%%%n",
                 waitingLongerProb_ * 100.0);
     }
     
