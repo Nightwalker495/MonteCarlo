@@ -47,7 +47,7 @@ public class McSolution_13 implements IMcSolution {
 
     @Override
     public String getReport() {
-        StringBuilder str = new StringBuilder("Results");
+        StringBuilder str = new StringBuilder(String.format("Results%n"));
         str.append(String.format("Probability that student finished in under "
                 + "60m = %.8f%%%n", finishUnderOneHourProb_ * 100.0));
         str.append(String.format("Min. time such that 90%% of students "
