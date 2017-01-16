@@ -1,0 +1,10 @@
+﻿1>------ Build started: Project: MonteCarlo_ShapeArea, Configuration: Debug x64 ------
+1>  main.cpp
+1>  MonteCarlo_ShapeArea.vcxproj -> E:\MonteCarlo\opencv_sandbox\MonteCarlo_ShapeArea\x64\Debug\MonteCarlo_ShapeArea.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++                 Please consider donating to VSColorOutput                    +++
++++                        http://mike-ward.net/donate/                          +++
++++            (this message can be turned off in the settings panel)            +++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
