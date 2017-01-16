@@ -107,8 +107,7 @@ static double monteCarloSizeRatio(const cv::Mat& image, unsigned threshold)
 	int validCount = 0;
 	const auto replsNum = calcReplicationsNum(image.rows, image.cols);
 
-	for (int i = 0; i < replsNum; i++)
-	{
+	for (int i = 0; i < replsNum; i++) {
 		const cv::Vec3b& color = image.at<cv::Vec3b>(rowGen.sample(),
 			colGen.sample());
 

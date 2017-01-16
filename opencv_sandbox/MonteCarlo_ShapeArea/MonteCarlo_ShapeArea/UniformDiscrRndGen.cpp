@@ -26,8 +26,7 @@ UniformDiscrRndGen::~UniformDiscrRndGen()
 UniformDiscrRndGen& UniformDiscrRndGen::operator=(
 	const UniformDiscrRndGen& other)
 {
-	if (this != &other)
-	{
+	if (this != &other) {
 		delete gen_;
 		gen_ = new mt19937(genSeed());
 
